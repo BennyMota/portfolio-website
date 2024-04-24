@@ -8,7 +8,7 @@ export const Banner = () => {
     const [loopNum, setLoopsNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() + 100);
+    const [delta, setDelta] = useState(400 - Math.random() + 100);
     const [index, setIndex] = useState(1);
     const toRotate = [ "Software Developer", "Web Designer", "UI/UX Designer" ];
     const period = 2000;
