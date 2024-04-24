@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.d8481319.css",
-    "main.js": "/portfolio-website/static/js/main.3431b98d.js",
+    "main.css": "/portfolio-website/static/css/main.2facd3cc.css",
+    "main.js": "/portfolio-website/static/js/main.eeaf8c3f.js",
     "static/js/453.aac68abc.chunk.js": "/portfolio-website/static/js/453.aac68abc.chunk.js",
+    "static/media/header-photo.png": "/portfolio-website/static/media/header-photo.66e2ad16ea4356e53c6d.png",
     "static/media/CentraNo2-Bold.ttf": "/portfolio-website/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/portfolio-website/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/portfolio-website/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/simple2.jpg": "/portfolio-website/static/media/simple2.3b1689df57395dc1aca0.jpg",
     "static/media/logo.svg": "/portfolio-website/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
     "static/media/nav-icon3.svg": "/portfolio-website/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
     "index.html": "/portfolio-website/index.html",
     "static/media/nav-icon1.svg": "/portfolio-website/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/portfolio-website/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.d8481319.css.map": "/portfolio-website/static/css/main.d8481319.css.map",
-    "main.3431b98d.js.map": "/portfolio-website/static/js/main.3431b98d.js.map",
+    "main.2facd3cc.css.map": "/portfolio-website/static/css/main.2facd3cc.css.map",
+    "main.eeaf8c3f.js.map": "/portfolio-website/static/js/main.eeaf8c3f.js.map",
     "453.aac68abc.chunk.js.map": "/portfolio-website/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8481319.css",
-    "static/js/main.3431b98d.js"
+    "static/css/main.2facd3cc.css",
+    "static/js/main.eeaf8c3f.js"
   ]
 }
