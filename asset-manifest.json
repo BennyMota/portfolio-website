@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.00ea2b4a.css",
-    "main.js": "/portfolio-website/static/js/main.df63f109.js",
+    "main.js": "/portfolio-website/static/js/main.86e86230.js",
     "static/js/453.aac68abc.chunk.js": "/portfolio-website/static/js/453.aac68abc.chunk.js",
     "static/media/header-photo.png": "/portfolio-website/static/media/header-photo.66e2ad16ea4356e53c6d.png",
     "static/media/simple3.jpg": "/portfolio-website/static/media/simple3.e5b5bcff7bcbd9e12a44.jpg",
@@ -11,6 +11,7 @@
     "static/media/CentraNo2-Bold.ttf": "/portfolio-website/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/portfolio-website/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/portfolio-website/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/Untitled-2.png": "/portfolio-website/static/media/Untitled-2.08c2c8ee72c22d4da2b6.png",
     "static/media/contact-img.svg": "/portfolio-website/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/Projects1.jpg": "/portfolio-website/static/media/Projects1.8b1de22b882fd7a3fe5a.jpg",
     "static/media/Projects2.jpg": "/portfolio-website/static/media/Projects2.8b1de22b882fd7a3fe5a.jpg",
@@ -25,11 +26,11 @@
     "static/media/arrow2.svg": "/portfolio-website/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/portfolio-website/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.00ea2b4a.css.map": "/portfolio-website/static/css/main.00ea2b4a.css.map",
-    "main.df63f109.js.map": "/portfolio-website/static/js/main.df63f109.js.map",
+    "main.86e86230.js.map": "/portfolio-website/static/js/main.86e86230.js.map",
     "453.aac68abc.chunk.js.map": "/portfolio-website/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00ea2b4a.css",
-    "static/js/main.df63f109.js"
+    "static/js/main.86e86230.js"
   ]
 }
