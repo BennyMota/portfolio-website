@@ -14,38 +14,38 @@ export const Banner = () => {
   const toRotate = [ "Software Developer", "UI/UX Designer" ];
   const period = 2000;
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+  // useEffect(() => {
+  //   let ticker = setInterval(() => {
+  //     tick();
+  //   }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
+  //   return () => { clearInterval(ticker) };
+  // }, [text])
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+  // const tick = () => {
+  //   let i = loopNum % toRotate.length;
+  //   let fullText = toRotate[i];
+  //   let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
-    setText(updatedText);
+  //   setText(updatedText);
 
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
+  //   if (isDeleting) {
+  //     setDelta(prevDelta => prevDelta / 2);
+  //   }
 
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  }
+  //   if (!isDeleting && updatedText === fullText) {
+  //     setIsDeleting(true);
+  //     setIndex(prevIndex => prevIndex - 1);
+  //     setDelta(period);
+  //   } else if (isDeleting && updatedText === '') {
+  //     setIsDeleting(false);
+  //     setLoopNum(loopNum + 1);
+  //     setIndex(1);
+  //     setDelta(500);
+  //   } else {
+  //     setIndex(prevIndex => prevIndex + 1);
+  //   }
+  // }
 
   return (
     <section className="banner" id="home">
@@ -56,8 +56,13 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Benny`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>{`Hi! I'm Benny Mota`}</h1>
+                  <p>I am a dedicated and goal-oriented Software Developer specializing in the development of impactful web and mobile applications. Proficient in a range of technologies including, Flutter, Dart, JavaScript, React, Firebase, Java, Python, Restful APIs, and Git, I am adept at crafting responsive designs and ensuring seamless user experiences.
+                    <br></br>
+                    <br></br>
+
+                    I excel in crafting engaging mobile interfaces leveraging Flutter to deliver robust applications. Proficient in seamlessly integrating front-end designs with back-end systems through Restful APIs, I ensure a smooth and efficient user experience across various mobile platforms.
+                  </p>
                   <button onClick={() => console.log('connect')}>Checkout my Github <ArrowRightCircle size={25} /><a href="https://github.com/BennyMota"></a></button>
               </div>}
             </TrackVisibility>
