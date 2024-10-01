@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button} from "react-bootstrap";
 import headerImg from "../assets/img/header-photo.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
@@ -66,6 +66,12 @@ export const Banner = () => {
                   <div className="git-icon">
                     <a href="https://github.com/BennyMota" target="_blank"><img src={gitIcon} alt="" /></a>
                   </div>
+                  {/* Download CV Button */}
+                <a href="Resume.pdf" download>
+                  <Button variant="primary">
+                    Download My CV <ArrowRightCircle size={25} />
+                  </Button>
+                </a>
               </div>}
             </TrackVisibility>
           </Col>
