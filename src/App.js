@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() =>{
-    document.title = "Home";
+    document.title = "Benny Mota";
 }, []);
   return (
     <div className="App">

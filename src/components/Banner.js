@@ -64,7 +64,7 @@ export const Banner = () => {
                   </p>
                   <p>Checkout my Github</p>
                   <div className="git-icon">
-                    <a href="https://github.com/BennyMota"><img src={gitIcon} alt="" /></a>
+                    <a href="https://github.com/BennyMota" target="_blank"><img src={gitIcon} alt="" /></a>
                   </div>
               </div>}
             </TrackVisibility>

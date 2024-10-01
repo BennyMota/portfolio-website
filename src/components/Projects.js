@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/Projects1.jpg";
-import projImg2 from "../assets/img/Projects2.jpg";
-import projImg3 from "../assets/img/Projects3.jpg";
+import projImg1 from "../assets/img/JavaNetworking.png";
+import projImg2 from "../assets/img/admin.png";
+import projImg3 from "../assets/img/independent-white.png";
 import colorSharp2 from "../assets/img/simple3.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,19 +11,22 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Client-Server",
+      description: "A Java Networking Project",
       imgUrl: projImg1,
+      link: "https://github.com/BennyMota/JavaNetworkingProgramming",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Admin Dashboard",
+      description: "A design of an admin dashboard",
       imgUrl: projImg2,
+      link: "https://github.com/BennyMota/Dashboard",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Independent Studios",
+      description: "Independent Studios Website",
       imgUrl: projImg3,
+      link: "https://github.com/BennyMota/Independent-Studios",
     },
   ];
 
@@ -52,12 +55,6 @@ export const Projects = () => {
                           })
                         }
                       </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

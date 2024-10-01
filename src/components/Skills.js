@@ -1,6 +1,10 @@
-import meter1 from "../assets/img/meter1.png";
-import meter2 from "../assets/img/meter2.png";
-import meter3 from "../assets/img/meter3.png";
+import python from "../assets/img/python-logo.png";
+import java from "../assets/img/java-logo.png";
+import javascript from "../assets/img/javascript-logo.png";
+import git from "../assets/img/Git-logo.png";
+import html from "../assets/img/html-logo.png";
+import css from "../assets/img/css-logo.png";
+import docker from "../assets/img/docker-logo.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -34,24 +38,36 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h2>Languages and Technologies in my Tech Stack</h2>
+                        <br></br>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src={python} alt="Image" /></a>
+                                <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                            <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><img src={java} alt="Image" /></a>
+                                <h5>Java</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                            <a href="https://simple.wikipedia.org/wiki/JavaScript" target="_blank"><img src={javascript} alt="Image" /></a>
+                                <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                            <a href="https://git-scm.com/" target="_blank"><img src={git} alt="Image" /></a>
+                                <h5>Git</h5>
+                            </div>
+                            <div className="item">
+                            <a href="https://www.docker.com/resources/what-container/" target="_blank"><img src={docker} alt="Image" /></a>
+                                <h5>Docker</h5>
+                            </div>
+                            <div className="item">
+                            <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img src={html} alt="Image" /></a>
+                                <h5>Html</h5>
+                            </div>
+                            <div className="item">
+                            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src={css} alt="Image" /></a>
+                                <h5>CSS</h5>
                             </div>
                         </Carousel>
                     </div>
