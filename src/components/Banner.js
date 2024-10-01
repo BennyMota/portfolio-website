@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-photo.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import gitIcon from '../assets/img/github-1.svg';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -57,13 +58,14 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Benny Mota`}</h1>
-                  <p>I am a dedicated and goal-oriented Software Developer specializing in the development of impactful web and mobile applications. Proficient in a range of technologies including, Flutter, Dart, JavaScript, React, Firebase, Java, Python, Restful APIs, and Git, I am adept at crafting responsive designs and ensuring seamless user experiences.
+                  <p>I am passionate about technology and driven by a commitment to continuous learning. I approach every challenge with a dynamic mindset, combining technical expertise with a deep curiosity for innovation. By staying adaptable and embracing emerging technologies, I consistently deliver fresh, effective solutions to real-world problems.
                     <br></br>
-                    <br></br>
-
-                    I excel in crafting engaging mobile interfaces leveraging Flutter to deliver robust applications. Proficient in seamlessly integrating front-end designs with back-end systems through Restful APIs, I ensure a smooth and efficient user experience across various mobile platforms.
+                    
                   </p>
-                  <button onClick={() => console.log('connect')}>Checkout my Github <ArrowRightCircle size={25} /><a href="https://github.com/BennyMota"></a></button>
+                  <p>Checkout my Github</p>
+                  <div className="git-icon">
+                    <a href="https://github.com/BennyMota"><img src={gitIcon} alt="" /></a>
+                  </div>
               </div>}
             </TrackVisibility>
           </Col>
