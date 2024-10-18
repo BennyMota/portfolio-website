@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/JavaNetworking.png";
-import projImg2 from "../assets/img/admin.png";
+import projImg2 from "../assets/img/speech_recognition.png";
 import projImg3 from "../assets/img/independent-white.png";
 import colorSharp2 from "../assets/img/simple3.jpg";
 import 'animate.css';
@@ -17,14 +17,14 @@ export const Projects = () => {
       link: "https://github.com/BennyMota/JavaNetworkingProgramming",
     },
     {
-      title: "Admin Dashboard",
-      description: "A design of an admin dashboard",
+      title: "Speech Recognition",
+      description: "A Speech Recognition and Speech Synthesis in a Winforms App",
       imgUrl: projImg2,
-      link: "https://github.com/BennyMota/Dashboard",
+      link: "https://github.com/BennyMota/SpeechRecognition",
     },
     {
       title: "Independent Studios",
-      description: "Independent Studios Website",
+      description: "Independent Studios Website design",
       imgUrl: projImg3,
       link: "https://github.com/BennyMota/Independent-Studios",
     },
