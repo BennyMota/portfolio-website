@@ -549,3 +549,123 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .contact form button:hover::before {
   width: 100%;
 }
+
+/* ===========================
+   Responsive adjustments
+   =========================== */
+
+/* Medium screens and below (tablets & small laptops) */
+@media (max-width: 991.98px) {
+  nav.navbar {
+    padding: 12px 0;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  .navbar-text {
+    margin-top: 12px;
+    justify-content: center;
+  }
+
+  .banner {
+    padding: 200px 0 80px 0;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+  }
+
+  .banner p {
+    width: 100%;
+  }
+
+  .skill-bx {
+    margin-top: 0;
+    padding: 40px 30px;
+  }
+
+  .project p {
+    width: 80%;
+  }
+
+  .project .nav.nav-pills {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 60px 0 140px 0;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 575.98px) {
+  nav.navbar {
+    padding: 10px 0;
+    background-color: #121212;
+  }
+
+  .navbar-text {
+    display: none;
+  }
+
+  nav.navbar a.navbar-brand {
+    width: 24%;
+  }
+
+  .banner {
+    padding: 160px 0 60px 0;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .banner .tagline {
+    font-size: 16px;
+  }
+
+  .skill-bx {
+    border-radius: 32px;
+    padding: 32px 20px;
+  }
+
+  .skill h2 {
+    font-size: 32px;
+  }
+
+  .project {
+    padding: 60px 0;
+  }
+
+  .project h2 {
+    font-size: 32px;
+  }
+
+  .project p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .background-image-right,
+  .background-image-left {
+    display: none;
+  }
+
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  .contact img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .contact form button {
+    width: 100%;
+    text-align: center;
+  }
+}

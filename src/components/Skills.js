@@ -42,31 +42,31 @@ export const Skills = () => {
                         <br></br>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src={python} alt="Image" /></a>
+                                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" rel="noopener noreferrer"><img src={python} alt="Python logo" /></a>
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                            <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><img src={java} alt="Image" /></a>
+                            <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" rel="noopener noreferrer"><img src={java} alt="Java logo" /></a>
                                 <h5>Java</h5>
                             </div>
                             <div className="item">
-                            <a href="https://simple.wikipedia.org/wiki/JavaScript" target="_blank"><img src={javascript} alt="Image" /></a>
+                            <a href="https://simple.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer"><img src={javascript} alt="JavaScript logo" /></a>
                                 <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                            <a href="https://git-scm.com/" target="_blank"><img src={git} alt="Image" /></a>
+                            <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><img src={git} alt="Git logo" /></a>
                                 <h5>Git</h5>
                             </div>
                             <div className="item">
-                            <a href="https://www.docker.com/resources/what-container/" target="_blank"><img src={docker} alt="Image" /></a>
+                            <a href="https://www.docker.com/resources/what-container/" target="_blank" rel="noopener noreferrer"><img src={docker} alt="Docker logo" /></a>
                                 <h5>Docker</h5>
                             </div>
                             <div className="item">
-                            <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img src={html} alt="Image" /></a>
+                            <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><img src={html} alt="HTML5 logo" /></a>
                                 <h5>Html</h5>
                             </div>
                             <div className="item">
-                            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src={css} alt="Image" /></a>
+                            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer"><img src={css} alt="CSS logo" /></a>
                                 <h5>CSS</h5>
                             </div>
                         </Carousel>
@@ -74,7 +74,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   )
 }
