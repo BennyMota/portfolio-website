@@ -3,12 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { db } from '../firebase';
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   
   const formInitialDetails = {
-    firstName: '',
+    name: '',
     lastName: '',
     email: '',
     phone: '',
@@ -27,16 +27,54 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    db.collection('contact').add({
-      formDetails: formDetails,
-    })
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const autoReplyTemplateId =
+      process.env.REACT_APP_EMAILJS_AUTOREPLY_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-    .then(() => {
+    if (!serviceId || !templateId || !publicKey) {
+      alert("Email service is not configured. Please set REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, and REACT_APP_EMAILJS_PUBLIC_KEY.");
+      return;
+    }
+
+    try {
+      const templateParams = {
+        name: formDetails.firstName,
+        lastName: formDetails.lastName,
+        email: formDetails.email,
+        phone: formDetails.phone,
+        message: formDetails.message,
+      };
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams,
+        { publicKey }
+      );
+
+      if (autoReplyTemplateId) {
+        try {
+          await emailjs.send(serviceId, autoReplyTemplateId, templateParams, {
+            publicKey,
+          });
+        } catch {
+          // Auto-reply failure shouldn't block the main submission
+        }
+      }
+
       alert("Sent successfully.");
-    })
-    .catch((error) => {
-      alert(error.message);
-    });
+      setFormDetails(formInitialDetails);
+    } catch (err) {
+      const message =
+        err && typeof err === 'object' && 'text' in err
+          ? err.text
+          : err instanceof Error
+            ? err.message
+            : "Failed to send message.";
+      alert(message);
+    }
   }
 
   return (
@@ -61,7 +99,7 @@ export const Contact = () => {
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
